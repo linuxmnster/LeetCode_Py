@@ -9,7 +9,7 @@ This is an O(long n^2) complixity code which directly does the brute force
 thsi is nothing but the logic of the Bubble Sort, this is not an optimal solution
 """
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         for i in range(0, len(nums)):
             for j in range(i+1, len(nums)):
                 if nums[i] + nums[j] == target:
@@ -28,7 +28,7 @@ For each number:
     with its index.
 """
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         d = {}
         for i in range(len(nums)):
             if nums[i] in d:
