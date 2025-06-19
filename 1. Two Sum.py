@@ -35,3 +35,12 @@ class Solution:
                 return [d[nums[i]], i]
             else:
                 d[target - nums[i]] = i
+
+#max optimization for sorted arrays
+def f(x, t):
+    j = 1
+    for i in range(len(x)):
+        if (x[i] + x[j]) == t:
+            return [i, j]
+        else:
+            j+=1
