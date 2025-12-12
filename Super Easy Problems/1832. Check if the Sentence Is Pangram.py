@@ -16,6 +16,15 @@ class Solution:
         return False
         # return len(set(sentence)) == 26
 
+class Solution:
+    def checkIfPanagram(self, sentence: str) -> bool:
+        if len(sentence) < 26:
+            return False
+        for i in range(26):
+            if chr(97+i) not in sentence:
+                return False
+        return True
+
 """🧠 EXPLANATION
 We use a set to track the unique letters we have seen.
 Why a set?
